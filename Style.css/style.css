@@ -345,22 +345,38 @@ figcaption{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
-}
-#contact .formulaire{
-    background-color: rgba(0, 219, 0, 0.322);
-    height: 500px;
-    width: 400px;
-    justify-content: center;
-    z-index:2;
-}
-div h3{
-    margin: 0;
-}
-div h6{
-    margin:0;
-}
+    width: 100%;
 
+}
+.formulaire{
+    background-color: rgba(164, 223, 164, 0.486);
+    height: 500px;
+    width: 350px;
+    display: block;
+    float: right;
+    position: relative;
+    left: 700px;
+    padding-left:15px;
+    overflow: hidden;
+}
+.formulaire div{
+    justify-content: right;
+    width: 90%;
+    padding: 0 0px 10px 2px;
+}
+input{
+    display: block;
+    height:auto;
+    width:98%;
+    padding-bottom: 3px;
+}
+textarea{
+    display: block;
+    height: auto;
+    width: 98%;
+    padding-bottom:50px;
+
+}
 
 
 
@@ -377,4 +393,5 @@ footer{
     background-color: rgb(61, 61, 61);
     padding: 10px 0 10px 0;
     color: #fff;
+    margin-top:0px;
 }
