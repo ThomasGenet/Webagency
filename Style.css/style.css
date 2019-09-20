@@ -22,6 +22,10 @@ nav {
     align-items: center;
     min-height: 82px;
     flex-wrap: wrap;
+    position: sticky;
+    top:0px;
+    background-color: #fff;
+    z-index: 10;
 
 }
 
@@ -330,4 +334,47 @@ figcaption{
 }
 .legende {
     font-size: 13px;
+}
+
+
+
+
+/*Formulaire Contact*/
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+#contact .formulaire{
+    background-color: rgba(0, 219, 0, 0.322);
+    height: 500px;
+    width: 400px;
+    justify-content: center;
+    z-index:2;
+}
+div h3{
+    margin: 0;
+}
+div h6{
+    margin:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    padding: 10px 0 10px 0;
+    color: #fff;
 }
