@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'FontAwesome';
-    src: url('webagency_images/fonts/fontawesome-webfont.eot');
-    src: url('webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-        url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
-        url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
-        url('webagency_images/fonts/fontawesome-webfont.svg#fontwesomeregular') format('svg');
+    src: url('/webagency_images/fonts/fontawesome-webfont.eot');
+    src: url('/webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+        url('/webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('/webagency_images/fonts/fontawesome-webfont.svg#fontwesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -104,21 +104,21 @@ nav a {
     color: white;
 }
 
-#flechegauche i {
+#flechegauche .fa-chevron-left{
     padding-right: 15px;
     text-align: right;
     position: relative;
     right: 40px;
-    background-color: green;
+    background-color: grey;
     z-index: 2;
 }
 
-#flechedroite i {
+#flechedroite .fa-chevron-right{
     padding-left: 15px;
     text-align: left;
     position: relative;
     left: 40px;
-    background-color: green;
+    background-color:grey;
     z-index: 2;
 }
 
@@ -244,4 +244,90 @@ hr {
 .text p {
     margin-left: 100px;
     text-align: justify;
+}
+
+/* Section: nos projets */
+#projets{
+    text-align: center;
+    background-color: #f5f5f5;
+}
+#projets h2{
+    padding-top: 20px;
+
+}
+#projets p {
+    width: 50%;
+    margin: auto;
+}
+
+#projets #navi ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0;
+    width: auto;
+}
+#navi li {
+    display: list-item;
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #d8d8d8;
+}
+#navi li:hover{
+    background-color: #5cadd3;
+    color:#fff;
+    
+   
+}
+#navi li:first-child{
+    border-radius: 4px 0 0 4px;
+
+}
+#navi li:last-child{
+    border-radius: 0 4px 4px 0;
+}
+/*Images nos projets */
+
+#imagesprojets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imagesprojets{
+    list-style-type: none;
+}
+#imagesprojets li img{
+    width:250px;
+    margin: 20px 20px;
+}
+
+#imagesprojets figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#imagesprojets #figcaption{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    bottom: 4px;
+    visibility: hidden;
+}
+figcaption{
+    display: block;
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+    z-index: 6;
+
+}
+.legende {
+    font-size: 13px;
 }
