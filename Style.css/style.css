@@ -162,48 +162,41 @@ nav a {
     min-height: 650px;
 }
 
-section p,
-a,
-#adresse {
-    color: #63686D;
-}
-
 h2 {
     font-size: 38px;
 }
 
 .intro {
+    display:flex;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
-/*DÃ©coration*/
-.fa {
-    color: #3BAED7;
+
+/*Infos*/
+#detailServices{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.fa-chevron-left,
-.fa-chevron-right {
-    color: white;
+#infos article{
+    justify-content: center;
+    flex-direction: row;
 }
 
-.fa-circle {
-    text-shadow: -5px 0 white, 0 5px white,
-        5px 0 white, 0 -5px white;
-}
+
 
 hr {
     width: 130px;
     opacity: 0.5;
 }
 
-.intro .fa-circle {
-    position: relative;
-    bottom: 18px;
-}
-
 .icon {
-    width: 80px;
-    height: 55px;
+    width: 60px;
+    height: 35px;
     border-radius: 100px;
     text-align: center;
     padding-top: 25px;
@@ -263,6 +256,13 @@ hr {
     padding-top: 20px;
 
 }
+#point{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background:#1D8DB5;
+    
+}
 #projets p {
     width: 50%;
     margin: auto;
@@ -286,9 +286,8 @@ hr {
 #navi li:hover{
     background-color: #5cadd3;
     color:#fff;
-    
-   
 }
+
 #navi li:first-child{
     border-radius: 4px 0 0 4px;
 
@@ -314,11 +313,15 @@ hr {
 
 #figures figcaption{
     position: relative;
+    display: flex;
     top: -60px;
     width: 80%;
     left: 12%;
     background-color: rgba(2, 2, 2, 0.267);
     margin:none;
+    z-index: 5;
+    color:#fff;
+    text-align: left;
 }
 
 
@@ -365,6 +368,7 @@ hr {
     padding-left:15px;
     overflow: hidden;
     z-index: 10;
+    align-items: stretch;
     
 }
 .formulaire div h2{
@@ -385,17 +389,41 @@ hr {
 .formulaire div{
     border: none;
 }
+
 input{
     display: block;
     height:auto;
-    width:98%;
-    padding-bottom: 3px;
-}
+    width:100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    color: grey;
+} 
 textarea{
     display: block;
     height: auto;
-    width: 98%;
+    width: 100%;
     padding-bottom:50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border:none;
+    border-radius: 5px;
+    color: grey;
+}
+.btn{
+    background-color: #1D8DB5;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-self: flex-end;
+    bottom: 10%;
+    border-radius: 3px;
+    justify-content: center;
 }
 
 
