@@ -303,34 +303,17 @@ hr {
 /*Images nos projets */
 #figures{
     display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: flex-end;
-    -ms-flex-flow: column;
-    max-width: 250px;
-    height: 500px;
-    z-index: 2;
+    
 }
-
 #figures figure{
-    display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
 }
-
-
-#figures img{
-    max-width:250px;
-    margin: 5px 5px;
+#figures figure{
+    max-width: 250px;
+    max-height: 
 }
+#figures figcaption{
 
-figcaption{
-    position: absolute;
-    bottom:0;
-    background-color: rgba(2, 2, 2, 0.267);
-    padding-left: px; 
-    margin-left: 6px;
-    z-index: 5;
-    color:#fff;
 }
 
 
@@ -388,6 +371,7 @@ input{
     border: none;
     border-radius: 5px;
     color: grey;
+    margin: 5px;
 } 
 textarea{
     display: block;
@@ -399,6 +383,7 @@ textarea{
     border:none;
     border-radius: 5px;
     color: grey;
+    margin: 5px;
 }
 .btn{
     background-color: #1D8DB5;
