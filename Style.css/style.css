@@ -6,7 +6,6 @@
         url('/webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
         url('/webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
         url('/webagency_images/fonts/fontawesome-webfont.svg#fontwesomeregular') format('svg');
-    
     font-weight: normal;
     font-style: normal;
 }
@@ -302,42 +301,38 @@ hr {
 
 
 /*Images nos projets */
-
 #figures{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     align-items: flex-end;
+    -ms-flex-flow: column;
+    max-width: 250px;
+    height: 500px;
     z-index: 2;
 }
 
+#figures figure{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 #figures img{
-    width:250px;
+    max-width:250px;
     margin: 5px 5px;
-    display:flex;
 }
 
 figcaption{
     position: absolute;
     bottom:0;
-    width: 13%;
-    height: 15.8%;
-    top:29%;
     background-color: rgba(2, 2, 2, 0.267);
-    padding-left: 3px; 
+    padding-left: px; 
     margin-left: 6px;
     z-index: 5;
     color:#fff;
-    text-align: left;
-    visibility: initial;
 }
-figcaption .legende{
-    margin-left:10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: left;
-}
+
 
 
 /*Formulaire Contact*/
