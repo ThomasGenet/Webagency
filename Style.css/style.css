@@ -344,20 +344,20 @@ hr {
     overflow: hidden;
     z-index: 10;
     align-items: stretch;
-    
+    flex-wrap: wrap;
 }
-.formulaire div h2{
+.formulaire  h2{
     font-size: 20px;
 }
-.formulaire div h5{
+.formulaire  h5{
     font-size: 15px;
 }
-.formulaire div{
+.formulaire {
     justify-content: right;
     width: 90%;
     padding: 0 0px 10px 2px;
 }
-.formulaire div{
+.formulaire {
     border: none;
 }
 
