@@ -185,6 +185,9 @@ span.point-blue::before {
     width: 100%;
     height: 1px;
 }
+.point-blue::before {
+    left: 38%;
+}
 .point-blue::after{
     right: 38%;
 }
@@ -358,6 +361,7 @@ span.point-blue::before {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    
 
 }
 #contact iframe{
@@ -368,39 +372,35 @@ span.point-blue::before {
 }
 .formulaire{
     background-color: rgba(241, 241, 241, 0.835);
-    height: 450px;
-    width: 350px;
+    max-height: 450px;
+    max-width: 350px;
+    width: 90%;
+    height: 100%;
     display: flex;
     position: absolute;
     left: 70%;
-    padding-left:15px;
+    padding: 0 0px 10px 2px;
+    margin:0 20px 0 20px;
     overflow: hidden;
     z-index: 10;
-    align-items: stretch;
-    flex-wrap: wrap;
+    flex-direction: column;
+    border: none;
 }
 .formulaire  h2{
     font-size: 20px;
+    padding-left: 10px;
 }
 .formulaire  h5{
     font-size: 15px;
+    padding-left: 10px;
 }
-.formulaire {
-    justify-content: right;
-    width: 90%;
-    padding: 0 0px 10px 2px;
-}
-.formulaire {
-    border: none;
-}
+
 
 input{
     display: block;
     height:auto;
-    width:100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
+    width:90%;
+    padding:5px 0 5px 5px;
     border: none;
     border-radius: 5px;
     color: grey;
@@ -409,7 +409,7 @@ input{
 textarea{
     display: block;
     height: auto;
-    width: 100%;
+    width: 90%;
     padding-bottom:50px;
     padding-top: 5px;
     padding-left: 5px;
@@ -426,14 +426,10 @@ textarea{
     position: absolute;
     display: flex;
     justify-content: left;
-    align-self: flex-end;
+    margin-left: 5px;
     bottom: 10%;
     border-radius: 3px;
-    justify-content: center;
 }
-
-
-
 /*Footer*/
 footer{
     text-align: center;
