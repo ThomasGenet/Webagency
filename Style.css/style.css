@@ -341,15 +341,15 @@ span.point-blue::before {
 #figures figcaption{
     display: block;
     max-width: 250px;
-    background-color: #3f7994;
-    color: white;
-    padding: 10px;
+    background-color: #898e916c;
+    color: ##fff;
     position: absolute;
+    padding: 10px;
     width: 100%;
-    height: 40px;
-    bottom: 4px;
-    visibility: hidden;
+    height: 50px;
+    bottom: 0px;
     box-sizing: border-box;
+    z-index: 50;;
 }
 
 
@@ -361,13 +361,15 @@ span.point-blue::before {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    
-
+}
+#contact iframe:hover{
+    background-color: #1D8DB5;
 }
 #contact iframe{
     width: 100%;
     height: 500px;
-    background: rgba(221, 222, 226, 0.294);
+    background:#1D8DB5;
+    position: relative;
     z-index: 3;
 }
 .formulaire{
