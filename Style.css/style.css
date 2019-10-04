@@ -328,6 +328,16 @@ span.point-blue::before {
     border-bottom-color: #000000;
     border-bottom: 35px;
 }
+#navi li .fa-caret-down{
+    display: none;
+}
+#navi li:hover .fa-caret-down{
+    color: #5cadd3;
+    font-size: 2em;
+    position: relative;
+    top: 1em;
+    right: 1em;
+}
 
 #navi li:first-child{
     border-radius: 4px 0 0 4px;
