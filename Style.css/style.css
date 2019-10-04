@@ -69,7 +69,12 @@ nav a {
 #menu a:hover {
     color: black;
 }
-
+@media screen and (max-width: 1024px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /*header*/
 
 #slider {
@@ -157,7 +162,14 @@ nav a {
     border-radius: 3px;
     cursor: pointer;
 }
-
+@media screen and (max-width: 1024px){
+    header #fille{
+        display:none;
+    }
+    header #garcon{
+        display:none;
+    }
+}
 /*Nos services*/
 #services {
     min-height: 650px;
@@ -254,7 +266,12 @@ span.point-blue::before {
     top: 50px;
     background-color:#5cadd3;
 }
-
+@media screen and (max-width: 1024px){
+    #services{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* Section: nos projets */
 #projets{
@@ -461,6 +478,12 @@ textarea{
     margin-left: 5px;
     bottom: 10%;
     border-radius: 3px;
+}
+@media screen and (max-width: 1024px){
+    .formulaire{
+        display: flex;
+        
+    }
 }
 /*Footer*/
 footer{
