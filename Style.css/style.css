@@ -459,8 +459,8 @@ h2 {
 }
 #contact iframe:hover{
     background-color: #1D8DB5;
-    position: absolute;
-    z-index: 99;
+    position: relative;
+    z-index: 9;
 }
 #contact iframe{
     width: 100%;
@@ -478,8 +478,8 @@ h2 {
     display: flex;
     position: absolute;
     left: 70%;
-    padding: 0 0px 10px 2px;
-    margin:0 20px 0 20px;
+    padding: 0 0px 0px 2px;
+    margin:0 20px 0 0px;
     overflow: hidden;
     z-index: 10;
     flex-direction: column;
@@ -493,6 +493,11 @@ h2 {
     font-size: 15px;
     padding-left: 10px;
 }
+.formulaire  p{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
 
 
 input{
@@ -528,6 +533,8 @@ textarea{
     margin-left: 5px;
     bottom: 10%;
     border-radius: 3px;
+    border-bottom-color: rgb(28, 109, 136);
+    
 }
 @media screen and (max-width: 1024px){
     #contact{
