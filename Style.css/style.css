@@ -328,8 +328,14 @@ span.point-blue::before {
     border-bottom-color: #000000;
     border-bottom: 35px;
 }
+
 #navi li .fa-caret-down{
-    display: none;
+    color: #5cadd3;
+    font-size: 2em;
+    position: relative;
+    top: 1em;
+    right: 1em;
+    opacity: 0;
 }
 #navi li:hover .fa-caret-down{
     color: #5cadd3;
@@ -337,7 +343,10 @@ span.point-blue::before {
     position: relative;
     top: 1em;
     right: 1em;
+    opacity: 1;
 }
+
+
 
 #navi li:first-child{
     border-radius: 4px 0 0 4px;
@@ -381,6 +390,20 @@ span.point-blue::before {
     bottom: 0px;
     box-sizing: border-box;
     text-align:left;
+    opacity: 0;
+}
+#figures figure:hover figcaption{
+    max-width: 250px;
+    background-color: #0000006c;
+    color: #fff;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    box-sizing: border-box;
+    text-align:left;
+    opacity: 1;
 }
 #figures figcaption .circle .fa-circle{
     font-size: 30px;
