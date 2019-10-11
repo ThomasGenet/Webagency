@@ -70,12 +70,7 @@ nav a {
 #menu a:hover {
     color: black;
 }
-@media screen and (max-width: 1024px){
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-}
+
 /*header*/
 
 #slider {
@@ -163,14 +158,7 @@ nav a {
     border-radius: 3px;
     cursor: pointer;
 }
-@media screen and (max-width: 1024px){
-    header #fille{
-        display:none;
-    }
-    header #garcon{
-        display:none;
-    }
-}
+
 /*Nos services*/
 #services {
     min-height: 650px;
@@ -291,12 +279,6 @@ h2 {
     color: #5cadd3;
     top: -0.3em;
     left: 0.2em;
-}
-@media screen and (max-width: 1024px){
-    #services{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 /* Section: nos projets */
@@ -558,7 +540,35 @@ textarea{
     border-bottom-color: rgb(28, 109, 136);
     
 }
+
+/*Footer*/
+footer{
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    padding: 10px 0 10px 0;
+    color: #fff;
+    margin-top:0px;
+}
+
 @media screen and (max-width: 1024px){
+    /*Header*/
+    header #fille{
+        display:none;
+    }
+    header #garcon{
+        display:none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Services*/
+    #services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Contact*/
     #contact{
         display: flex;
         flex-direction: column;
@@ -581,11 +591,4 @@ textarea{
     
     
 }
-/*Footer*/
-footer{
-    text-align: center;
-    background-color: rgb(61, 61, 61);
-    padding: 10px 0 10px 0;
-    color: #fff;
-    margin-top:0px;
-}
+
