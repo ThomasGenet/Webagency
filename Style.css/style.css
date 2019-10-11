@@ -615,3 +615,10 @@ footer{
     
 }
 
+@media screen and (max-width:768px){
+    #infos article{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
