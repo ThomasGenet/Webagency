@@ -349,6 +349,8 @@ h2 {
     max-height: 25px;
     height: 21px;
     width: 82px;
+    border-bottom: 1em;
+    border-bottom-color: #000000;
 }
 
 #navi li .fa-caret-down{
@@ -563,7 +565,7 @@ footer{
     margin-top:0px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     /*Header*/
     header #fille{
         display:none;
