@@ -1,3 +1,48 @@
+/*Reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 @font-face {
     font-family: 'FontAwesome';
@@ -150,13 +195,18 @@ nav a {
     font-size: 16px;
 }
 
-#presentation p:last-child {
+#presentation button {
     background-color: #3BAED7;
+    color: white;
     text-align: center;
     padding: 10px;
     width: 110px;
     border-radius: 3px;
     cursor: pointer;
+    
+    border-bottom: 0.5em ridge rgba(28, 109, 136, 0.253) ;
+    
+    
 }
 
 /*Nos services*/
@@ -387,7 +437,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    max-width: 1400px;
+    width: 80%;
 }
 #figures figure{
     flex-flow: column;
@@ -397,7 +447,7 @@ h2 {
     
 }
 #figures figure img{
-    max-width: 250px;
+    max-width: 8;
     max-height: 180px;
     height: 100%;
     width:100%;
@@ -488,9 +538,7 @@ h2 {
     position: absolute;
     z-index: 9;
 }
-#contact .fondbleu:hover{
-    display: none;
-}
+
 .formulaire{
     background-color: rgba(241, 241, 241, 0.835);
     max-height: 450px;
@@ -606,22 +654,26 @@ footer{
         position: absolute;
         display: flex;
     }
-    iframe .fondbleu{
+    .fondbleu{
         display: none;
     }
-    iframe .fondbleu:hover{
+   .fondbleu:hover{
         display: none;
     }
     
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
     #infos article{
         display: flex;
         flex-direction: column;
     }
     #figures figure img{
-        width: 500px;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
