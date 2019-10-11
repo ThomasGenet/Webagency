@@ -307,7 +307,7 @@ h2 {
     position: absolute;
     justify-content: center;
 }
-#projets p {
+#projets p{
     width: 60%;
     margin: auto;
     position: relative;
@@ -329,9 +329,17 @@ h2 {
 
 #navi li {
     display: list-item;
-    padding: 5px;
+    padding: 10px;
     margin: 10px 0px;
     background-color: #d8d8d8;
+    max-height: 20px;
+    width: 80px;;
+}
+#navi li p{
+    justify-content: center;
+    margin-top: 15px;
+    height: 20px;
+    display: inline;
 }
 #navi li:hover{
     background-color: #5cadd3;
@@ -374,6 +382,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+    max-width: 1400px;
 }
 #figures figure{
     flex-flow: column;
@@ -448,6 +457,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+
 }
 #contact #titre{
     display: none;
@@ -464,30 +474,27 @@ h2 {
     background:#1D8DB5;
     position: relative;
     z-index: 3;
-    color: rgba(28, 109, 136,1);
+    
 }
 #contact #fondbleu{
-    background-color: rgb(9, 38, 165);
+    background-color:rgba(28, 109, 136,1);
     width: 100%;
     height: 500px;
-    position: absolute;
+    position: relative;
     z-index: 9;
 }
 .formulaire{
     background-color: rgba(241, 241, 241, 0.835);
     max-height: 450px;
     max-width: 350px;
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     position: absolute;
-    left: 70%;
-    padding: 0 0px 0px 2px;
-    margin:0 20px 0 0px;
-    overflow: hidden;
     z-index: 10;
+    left: 70%;
     flex-direction: column;
-    border: none;
+    
 }
 .formulaire  h2{
     font-size: 20px;
@@ -498,7 +505,7 @@ h2 {
     padding-left: 10px;
 }
 .formulaire  p{
-    font-size: 15px;
+    font-size: 12px;
     padding-left: 10px;
 }
 
