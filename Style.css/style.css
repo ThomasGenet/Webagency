@@ -27,7 +27,7 @@ nav {
     position: sticky;
     top:0px;
     background-color: #fff;
-    z-index: 10;
+    z-index: 50;
 
 }
 
@@ -590,20 +590,28 @@ footer{
     }
     .formulaire{
         position: relative;
-        max-width: 1024px;
-        width: 100%;
+        max-width: 1200px;
+        width: 50%;
         height: 100%;
         left: 0em;
+        display: flex;
+        left: 25%;
         text-align: center;
     }
     .btn{
         position: relative;
+        left: 35%;
     }
     iframe{
         position: absolute;
         display: flex;
     }
-    
+    iframe .fondbleu{
+        display: none;
+    }
+    iframe .fondbleu:hover{
+        display: none;
+    }
     
 }
 
