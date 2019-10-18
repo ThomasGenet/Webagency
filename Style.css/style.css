@@ -672,10 +672,26 @@ footer{
     
 }
 
-@media screen and (max-width:768px){
+@media  (max-width:768px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
     #menu{
         display: flex;
         flex-direction: column;
+        justify-content: left;
+    }
+    #menu li{
+        padding: 0.3em;
+    }
+    #menu ul{
+        width: 50%;
+        position: absolute;
+        
+    }
+    .intro .fa-circle{
+        margin-top: -3.3em;
     }
     #infos article{
         display: flex;
