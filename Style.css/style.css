@@ -683,7 +683,7 @@ footer{
     nav div{
         width: 10em;
         height: 30%;
-        background-color: #1D8DB5;
+        background-color: #5cadd3;
         position: fixed;
         left: 0%;
         transform: translate3d(0,0,0);
@@ -693,7 +693,8 @@ footer{
         position: sticky;
         color: #fff;
         top: 10px;
-        left: 10px;
+        text-align: right;
+        right:1em;
     }
     #menu{
         display: flex;
