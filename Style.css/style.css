@@ -189,10 +189,12 @@ nav a {
 
 #presentation h1 {
     font-size: 30px;
+    margin: 10px 0;
 }
 
 #presentation p {
     font-size: 16px;
+    margin: 10px 0;
 }
 
 #presentation button {
@@ -204,7 +206,7 @@ nav a {
     border-radius: 3px;
     cursor: pointer;
     
-    border-bottom: 0.5em ridge rgba(28, 109, 136, 0.253) ;
+    border-bottom: 0.3em ridge rgba(28, 109, 136, 0.253) ;
     
     
 }
@@ -214,6 +216,7 @@ nav a {
     min-height: 650px;
     display:flex;
     flex-direction:column;
+    margin-top: 10px;
 }
 .intro {
     display:flex;
@@ -223,7 +226,7 @@ nav a {
 }
 .intro p {
     width: 60%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 h2 {
@@ -233,7 +236,6 @@ h2 {
 .intro .line{
     border-top: 1px solid grey;
     width: 10%;
-    position: absolute;
     margin-top: 1em;
     left: 45%;
     right: 60%;
@@ -245,8 +247,7 @@ h2 {
 .intro .fa-circle{
     position: absolute;
     left: 50%;
-    margin-top: 1em;
-    
+    margin-top: -1.3em;
     justify-content: center;
 }
 
@@ -288,6 +289,7 @@ h2 {
 #infos article{
     justify-content: center;
     flex-direction: row;
+    margin: 20px auto;
 }
 
 .icon {
@@ -362,6 +364,7 @@ h2 {
     margin: auto;
     position: relative;
     justify-content: center;
+    margin: 20px auto;
 }
 
 #projets #navi {
@@ -444,14 +447,16 @@ h2 {
     max-width: 250px;
     position: relative;
     overflow: hidden;
+    margin: 1em;
     
 }
 #figures figure img{
-    max-width: 8;
+    max-width: 250px;
     max-height: 180px;
     height: 100%;
     width:100%;
     position: relative;
+    
     
 }
 #figures figcaption{
@@ -466,6 +471,7 @@ h2 {
     box-sizing: border-box;
     text-align:left;
     opacity: 0;
+    
 }
 #figures figure:hover figcaption{
     max-width: 250px;
@@ -512,6 +518,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    margin-top: 20px;
 
 }
 #contact #titre{
@@ -550,19 +557,21 @@ h2 {
     z-index: 10;
     left: 70%;
     flex-direction: column;
-    
 }
 .formulaire  h2{
     font-size: 20px;
     padding-left: 10px;
+    margin: 0.5em 0;
 }
 .formulaire  h5{
     font-size: 15px;
     padding-left: 10px;
+    margin: 0.1em 0;
 }
 .formulaire  p{
     font-size: 12px;
     padding-left: 10px;
+    margin: 0.2em 0;
 }
 
 
