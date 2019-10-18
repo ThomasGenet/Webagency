@@ -73,7 +73,6 @@ nav {
     top:0px;
     background-color: #fff;
     z-index: 50;
-
 }
 
 nav a {
@@ -86,6 +85,9 @@ nav a {
     margin-top: 10px;
 }
 
+nav .fa-bars{
+    display: none;
+}
 #menu {
     list-style-type: none;
     display: flex;
@@ -676,14 +678,35 @@ footer{
     nav{
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 5em;
+    }
+    nav div{
+        width: 10em;
+        height: 30%;
+        background-color: #1D8DB5;
+        position: fixed;
+        left: 0%;
+        transform: translate3d(0,0,0);
+    }
+    nav .fa-bars{
+        display: block;
+        position: sticky;
+        color: #fff;
+        top: 10px;
+        left: 10px;
     }
     #menu{
         display: flex;
         flex-direction: column;
         justify-content: left;
+        position: absolute;
+        left: -5em;
+        top: 50%;
+        margin: auto;
     }
     #menu li{
         padding: 0.3em;
+        color: #fff;
     }
     #menu ul{
         width: 50%;
