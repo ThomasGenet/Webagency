@@ -746,7 +746,7 @@ footer {
     margin-top: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 960px) {
 
     /*Header*/
     header #fille {
@@ -812,7 +812,8 @@ footer {
         margin-bottom: 5em;
     }
 
-    nav div {
+    nav #menuopen,
+    nav #menuclose {
         width: 10em;
         height: 30%;
         background-color: #5cadd3;
@@ -820,13 +821,34 @@ footer {
         left: -9em;
     }
 
+    nav #menuopen:target {
+        left: -4em;
+    }
 
-    nav div a.ouvrir{
-        position: absolute;
+    nav #menuclose:target {
+        left: -9em;
+    }
+
+    nav div .ouvrir {
+        position: relative;
         right: -0em;
         top: 6em;
     }
 
+    nav div .fermer {
+        position: relative;
+        right: -0em;
+        top: 6em;
+    }
+
+    nav .fa-times {
+        display: block;
+        position: sticky;
+        color: #fff;
+        top: 10px;
+        text-align: right;
+        right: 1em;
+    }
 
     nav .fa-bars {
         display: block;
@@ -842,7 +864,7 @@ footer {
         flex-direction: column;
         justify-content: left;
         position: absolute;
-        left: -5em;
+        left: -3em;
         top: 50%;
         margin: auto;
     }
