@@ -146,7 +146,6 @@ table {
 body {
     margin: 0;
     font-family: 'fontawesome-webfont', Arial, Helvetica, sans-serif;
-
 }
 
 /*nav*/
@@ -176,6 +175,14 @@ nav a {
 nav .fa-bars {
     display: none;
 }
+
+/*Menu hamburger*/
+
+#page-nav label,
+#hamburger {
+    display: none;
+}
+
 
 #menu {
     list-style-type: none;
@@ -496,8 +503,6 @@ h2 {
 
 #navi li p {
     justify-content: center;
-    margin-top: 15px;
-    height: 20px;
     display: inline;
 }
 
@@ -567,7 +572,6 @@ h2 {
     height: 100%;
     width: 100%;
     position: relative;
-
 
 }
 
@@ -812,97 +816,69 @@ footer {
         margin-bottom: 5em;
     }
 
-    nav #menuopen,
-    nav #menuclose {
-        width: 10em;
-        height: 30%;
-        background-color: #5cadd3;
-        position: fixed;
-        left: -9em;
+    #page-nav {
+        position: relative;
+        left: -10em;
     }
 
-    nav #menuopen:target {
+    #page-nav label {
+        display: inline-block;
+        color: #fff;
+        background: #5cadd3;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
         left: -4em;
     }
 
-    nav #menuclose:target {
-        left: -9em;
-    }
-
-    nav div .ouvrir {
-        position: relative;
-        right: -0em;
-        top: 6em;
-    }
-
-    nav div .fermer {
-        position: relative;
-        right: -0em;
-        top: 6em;
-    }
-
-    nav .fa-times {
+    /* Break down menu items into vertical */
+    #page-nav ul li {
         display: block;
-        position: sticky;
-        color: #fff;
-        top: 10px;
-        text-align: right;
-        right: 1em;
     }
 
-    nav .fa-bars {
+    #page-nav ul li {
+        border-top: 1px solid #333;
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    #page-nav ul {
+        display: none;
+    }
+
+    #page-nav input:checked~ul {
         display: block;
-        position: sticky;
-        color: #fff;
-        top: 10px;
-        text-align: right;
-        right: 1em;
     }
+}
 
-    #menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        position: absolute;
-        left: -3em;
-        top: 50%;
-        margin: auto;
-    }
 
-    #menu li {
-        padding: 0.3em;
-        color: #fff;
-    }
+.intro .fa-circle {
+    margin-top: -3.3em;
+}
 
-    #menu ul {
-        width: 50%;
-        position: absolute;
+#infos article {
+    display: flex;
+    flex-direction: column;
+}
 
-    }
+#figures {
+    width: 100%;
+}
 
-    .intro .fa-circle {
-        margin-top: -3.3em;
-    }
+#figures figure {
+    max-width: 50%;
+}
 
-    #infos article {
-        display: flex;
-        flex-direction: column;
-    }
+#figures figure img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-    #figures {
-        width: 100%;
-    }
-
-    #figures figure {
-        max-width: 50%;
-    }
-
-    #figures figure img {
-        max-width: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
+#figures figcaption {
+    max-width: 100%;
+    width: 100%;
 
 }
